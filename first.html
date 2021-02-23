@@ -1,0 +1,22 @@
+<script>
+    var a = [];
+    const total = [];    
+    for(var i =0; i<10; i++){
+        const b = Math.floor(Math.random() * 100);
+        a.push(b);
+    }
+    for(i=0; i<a.length; i++)
+    {
+        if(a[i]%2 == 0 ){
+            total.push(a[i]);
+        }
+    }
+
+    function result(){
+        for(var i =0; i<total.length; i++){
+        document.write(`<h3>${i} is ${total[i]} is Even`+"</h3><br>");
+    }
+    }
+
+    result();
+</script>

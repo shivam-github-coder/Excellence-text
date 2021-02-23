@@ -1,0 +1,23 @@
+<script>
+
+var a = [1,0,1,0,1,1,1,0,1,0,1,0,1,1,1,1,0,1,0,1,0,1,0,1,0,0,1,0];
+var s1 = 1;
+var s0 = 0;
+var d = 0 ;
+for (var i = 0 ; i<a.length; i++){
+   var j = i+1;
+
+   if(a[i] == a[j])
+   {
+       s1++;
+   }
+   else if(d <= s1){
+       d=s1 ;
+       s1 =1;
+   }
+  
+
+}
+document.write(d);
+
+</script>
